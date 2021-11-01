@@ -4,7 +4,7 @@ require('dotenv').config()
 const ObjectId = require('mongodb').ObjectId;
 
 const app = express();
-const port = proccess.eve.PORT || 5000;
+const port = process.env.PORT || 5000;
 const cors = require('cors');
 // MIDDLEWARE
 app.use(cors());
